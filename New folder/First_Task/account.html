@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loin Page</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20161229/_username_login_1172579.png">
+    <link rel="stylesheet" href="index.css">
+    
+    
+
+
+
+ <script>  
+        function verifyPassword() {  
+            var usr = document.form.username.value;
+            var pswd = document.form.password.value;
+            var con = document.form.contact.value;
+
+            var cp = document.form.cpassword.value;
+
+            
+
+           
+            if(usr== ""&&pswd == "" &&con== ""){
+                alert("Fill Your Information");
+                return false
+            }
+
+            if(usr== ""){
+                alert("Fill Your username");
+                return false
+            }
+
+            if(pswd== ""){
+                alert("Fill Your Password");
+                return false
+            }
+
+
+            if(cp== ""){
+                alert("Fill Your Password");
+                return false
+            }
+           
+            if(usr == ""&& pswd!==""){
+                alert("Enter Your Username");
+                return false
+            }
+
+            if(cp == ""&& pswd!==""){
+                alert("Enter Your Confirm Password");
+                return false
+            }
+
+            if(cp!== ""&& pswd==""){
+                alert("Enter Your Password");
+                return false
+            }
+
+            if(cp!==pswd){
+                alert("Your Confirm Password and Password Not Match");
+                return false
+            }
+            
+
+
+            if(usr!== ""&& pswd == ""){
+                alert("Enter Your Password");
+                return false
+            }
+
+           
+
+
+
+           
+            if(pswd!=="Astoria123"){
+                alert("Your Password is wrong");
+                return false
+            }
+
+            if(usr!=="Astoria"){
+                alert("Your username is wrong");
+                return false
+            }
+
+           
+
+
+            if(con.length >10){
+                alert("Your contact is unexpected");
+                return false
+            }
+
+            if(con.length < 10){
+                alert("Please Enter All Digits ");
+                return false
+            }
+            
+
+            if(usr=="Astoria" && pswd=="Astoria123"){
+                alert("registration Successfully");
+                setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+            else{
+                alert("registration Failed ! Fill Right Information");
+            
+            }
+
+          }  
+        
+        </script>  
+    
+</head>
+<body>
+
+    <div class="nav">
+      
+        <a class="Home" onclick="window.open('home.html')" href="">Home</a>
+        <a class="Contact" onclick="window.open('contact.html')" href="">Contact</a>
+        <a class="About" onclick="window.open('about.html')" href="">About</a>
+        
+        
+    </div>
+  
+
+    
+
+  
+    <center>
+        
+     <h1> <b> Register Your Account </b></h1>
+
+      <form name="form" id="form" onsubmit =" return verifyPassword()" >
+        
+    
+
+        <div class="container">
+
+
+            
+
+           <label   for="username"><b>Username :</b></label> &nbsp;&nbsp;
+            <input   id = "username"    name="username" type="text" placeholder="Enter Username"  > <br> <br>
+            
+
+
+            <label style="margin-right:10px;"  for="password"><b>Password :</b></label>&nbsp;&nbsp;
+            <input  id = "password"  type="password" name="password" placeholder="Enter Password" > <br> <br>
+           
+
+            <label style="margin-left:-50px;"  for="password"><b>Confirm Password :</b></label>&nbsp;&nbsp;
+            <input  id = "cpassword"  type="password" name="cpassword" placeholder="Enter Confirm Password" > <br> <br>
+
+
+            <label style="margin-right:15px;"  for="contact"><b>Contact :</b></label>&nbsp;&nbsp;
+            <input  id = "contact"  type="text" name="contact" placeholder="Enter contact" > <br> <br>
+            
+            
+            <label style="margin-right:20px;"   for="email"><b>Email :</b></label>&nbsp;&nbsp;
+           
+            <input  id = "email"  type="email" name="email" placeholder="Enter email" > <br> <br>
+          
+           <button value="submit"  style="margin-right:20px;"  name="submit" id="submit">submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+           <button value="submit" name="submit"  style="margin-left:20px;"  id="submit" onclick="window.open('index.html')" >Logout</button>
+           <br><br>
+
+
+
+
+
+
+
+
+        </div> <br>
+         
+
+          
+           
+
+          <!--  <button  onclick="window.open('Welcome.html')" style="padding: 10px 10px ;   box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Click Here</button >-->
+
+      </form> 
+
+     
+      </div>
+
+
+
+    </center>
+
+
+   
+    
+ 
+    
+
+
+
+   
+
+
+
+</body>
+</html>

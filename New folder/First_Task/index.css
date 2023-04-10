@@ -1,0 +1,199 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+h1{
+    text-align: center;
+
+    margin-left: 15%;
+}
+.nav{
+    height: 55px;
+    background-color: #333;
+     
+   padding: 20px 20px;
+   
+   
+  
+   text-decoration: none;
+   font-size: 17px;
+
+   box-shadow: 1px 2px 3px 4px rgba(173, 165, 165, 0.845);
+
+}
+.nav a{
+    
+    text-align: center;
+   padding: 10px 20px;
+   margin-top: 20px ;
+   color:#fff;
+  
+   text-decoration: none;
+   font-size: 17px;
+   box-shadow: 1px 2px 3px 4px rgba(65, 64, 64, 0.525);
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 15px;
+    
+    
+}
+
+center{
+    box-shadow: 1px 2px 3px 4px rgb(216, 216, 216);
+    border-radius: 20px;
+    box-shadow:3px solid #333;
+    margin-left: 25%;
+    margin-top: 5%;
+    padding: 50px 50px;
+    align-items: center;
+    height: 450px;
+    width: 490px;
+    background-color: aqua;
+}
+.container{
+    margin-top: 30px;
+}
+
+.container input{
+    border-radius: 15px;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943);
+
+}
+
+.container button{
+    width: 95px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943);
+
+}
+h1{
+    text-align: center;
+  
+}
+
+
+
+#back {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+   
+}
+ a {
+    text-decoration: none;
+ }
+
+
+
+ .navbar{
+   
+    height: 55px;
+    background-color: rgb(47, 44, 44);
+     
+    padding: 20px 20px;
+   
+   position: relative;
+  
+   text-decoration: none;
+   font-size: 17px;
+
+   box-shadow: 1px 1px 1px 1px rgb(255, 251, 251);
+
+}
+.navbar a{
+  
+    text-align: center;
+   padding: 10px 20px;
+   margin-top: 20px ;
+   color:rgb(255, 255, 255);
+  
+   text-decoration: none;
+   font-size: 17px;
+   box-shadow: 1px 1px 1px 1px rgb(47,44,44);
+}
+
+.navbar a:hover {
+    background-color: rgb(187, 187, 187);
+    color: rgb(251, 251, 251);
+    border-radius: 15px;
+    
+    
+}
+
+
+
+.main-text{
+    position: relative;
+    margin: 10% auto;
+    text-align: center;
+
+}
+.main-text h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-text .button{
+   text-decoration: none; 
+    display: block;
+    width:120px ;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    margin:25px auto ;
+    color: rgb(8, 0, 0);
+    line-height:30px ;
+    border:2px solid #fff ;
+
+}
+
+.button :hover{
+    background-color: #fff;
+  
+    transition: 0.5s;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(119, 119, 119);
+}
+
+
+.background img{
+    margin-top: -1px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
+}
+
+
+
+input#go {
+   
+    
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: #f1eaea;
+    color: #2d2828;
+    padding: 10px 20px;
+  border:2px solid rgb(243, 242, 242);
+}
+input#go:hover {
+    background-color: #3b3b3b;
+    color: #9e9e9e;
+    border:1px solid rgb(246, 246, 246);
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loin Page</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20161229/_username_login_1172579.png">
+    <link rel="stylesheet" href="index.css">
+    
+    
+
+
+
+ <script>  
+        function verifyPassword() {  
+            var usr = document.form.username.value;
+            var pswd = document.form.password.value;
+
+
+            if(usr== ""&&pswd == ""){
+                alert("Firstly Fill Your Username & Password");
+                return false
+            }
+
+            if(usr == ""&& pswd!==""){
+                alert("Enter Your Username");
+                return false
+            }
+
+            if(usr!== ""&& pswd == ""){
+                alert("Enter Your Password");
+                return false
+            }
+
+
+
+            if(usr=="Astoria" && pswd=="Astoria123"){
+                alert("Your login is Successfully");
+                setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+            else{
+                alert(" Your username and Password is incorrect ");
+                return 
+            }
+
+          }  
+        
+        </script>  
+    
+</head>
+<body>
+
+    <div class="nav">
+        
+        <a class="Home" onclick="window.open('home.html')" href="">Home</a>
+        <a class="Contact" onclick="window.open('contact.html')" href="">Contact</a>
+        <a class="About" onclick="window.open('about.html')" href="">About</a>
+        
+        
+    </div>
+  
+
+    
+
+  
+    <center>
+        
+     <h1> <b> Login Your Account </b></h1>
+
+      <form name="form" id="form" onsubmit ="return verifyPassword()" >
+        
+    
+
+        <div class="container">
+
+
+            
+
+           <label   for="username"><b>Username :</b></label>
+            <input   id = "username"    name="username" type="text" placeholder="Enter Username" > <br> <br>
+            
+
+
+            <label  for="password"><b>Password :</b></label>
+            <input  id = "password"  type="password" name="password" placeholder="Enter Password"> <br> <br>
+           
+             
+          
+           <button value="submit" name="submit">Login</button><br><br>
+
+
+
+
+
+
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>  <span class="frgt"><a onclick="window.open('createpswrd.html')" href="#"> Forget Your Password ? </a></span>
+
+
+        </div> <br>
+         
+        <div class="box">
+          
+            <span class="reg"><a  href="#"  onclick="window.open('account.html')" > Not Have Account You Can Register Here... </a></span>  <br> <br>
+
+          <!--  <button  onclick="window.open('Welcome.html')" style="padding: 10px 10px ;   box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Click Here</button >-->
+
+      </form> 
+
+     
+      </div>
+
+
+
+    </center>
+
+
+   
+    
+ 
+    
+
+
+
+   
+
+
+
+</body>
+</html>

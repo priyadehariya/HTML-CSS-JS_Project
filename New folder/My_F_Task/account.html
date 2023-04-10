@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loin Page</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20161229/_username_login_1172579.png">
+    <link rel="stylesheet" href="index.css">
+    
+    
+
+
+
+ <script>  
+        function verifyPassword() {  
+            var usr = document.form.username.value;
+            var pswd = document.form.password.value;
+            var con = document.form.contact.value;
+
+            if(usr==""){
+                alert("Your username is not fill");
+            }
+            
+            
+            if(pswd!=="Astoria123"){
+                alert("Your Password is wrong");
+            }
+
+            if(usr!=="Astoria"){
+                alert("Your username is wrong");
+            }
+
+            if(con.length >10){
+                alert("Your contact is unexpected");
+            }
+
+            if(con.length < 10){
+                alert("Your contact is unexpected");
+            }
+            
+
+            if(usr=="Astoria" && pswd=="Astoria123"){
+                alert("registration Successfully");
+                setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+            else{
+                alert("registration Failed");
+            }
+
+          }  
+        
+        </script>  
+    
+</head>
+<body>
+
+    <div class="nav">
+      
+        <a class="Home" href="">Home</a>
+        <a class="Contact" href="">Contact</a>
+        <a class="About" href="">About</a>
+        <a  href="Logout" onclick="window.open('index.html')" >Logout</a>
+        
+    </div>
+  
+
+    
+
+  
+    <center>
+        
+     <h1> <b> Register Your Account </b></h1>
+
+      <form name="form" id="form" onsubmit ="verifyPassword()" >
+        
+    
+
+        <div class="container">
+
+
+            
+
+           <label   for="username"><b>Username :</b></label>
+            <input   id = "username"    name="username" type="text" placeholder="Enter Username" required > <br> <br>
+            
+
+
+            <label  for="password"><b>Password :</b></label>
+            <input  id = "password"  type="password" name="password" placeholder="Enter Password" required> <br> <br>
+           
+            <label  for="contact"><b>Contact :</b></label>
+            <input  id = "contact"  type="text" name="contact" placeholder="Enter contact" required> <br> <br>
+            
+            
+            <label  for="email"><b>Email :</b></label>
+            <input  id = "email"  type="email" name="email" placeholder="Enter email" required> <br> <br>
+          
+           <button value="submit" name="submit" id="submit">submit</button><br><br>
+
+
+
+
+
+
+
+
+        </div> <br>
+         
+
+          
+           
+
+          <!--  <button  onclick="window.open('Welcome.html')" style="padding: 10px 10px ;   box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Click Here</button >-->
+
+      </form> 
+
+     
+      </div>
+
+
+
+    </center>
+
+
+   
+    
+ 
+    
+
+
+
+   
+
+
+
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://png.pngtree.com/svg/20161229/_username_login_1172579.png">
+</head>
+<body>
+   
+    <div class="nav">
+        <a class="Home" href="">Home</a>
+        <a class="Contact" href="">Contact</a>
+        <a class="About" href="">About</a>
+
+        <button onclick="window.open('index.html')" style="padding: 5px 10px ;  margin-left: 10px;  box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Logout</button > <br><br>
+
+       
+         </div>
+    <div id="back">
+     
+        
+
+    <center  style="height:400px ; width: 550px; " >
+
+
+        <form  name="form" id="form" onsubmit ="validation()"></form>
+          
+        <h1 style="margin-left: 20px;" ><b>Registration Here</b></h1>
+  
+          <div class="container "   style="margin-top: 20px;">
+              <label for="Fname" ><b>FirstName :</b></label>  &nbsp  &nbsp  &nbsp &nbsp
+              <input name="firstname" id="firstname" type="text" placeholder="Enter Firstname" required> <br> <br>
+  
+              <label for="LastName"><b>LastName :</b></label> &nbsp  &nbsp  &nbsp &nbsp
+              <input name="lasttname" id="lastname" type="text" placeholder="Enter LastName" required> <br> <br>
+  
+              <label  for="Username"><b>Username:</b></label> &nbsp  &nbsp  &nbsp &nbsp
+              <input name="username" id="username" type="text" placeholder="Enter Username" required> <br> <br>
+
+              <label  for="Password"><b>Password:</b></label> &nbsp  &nbsp  &nbsp &nbsp
+              <input name="pasword" id="password" type="password" placeholder="Enter Password" required> <br> <br>
+              
+    
+            
+  
+              <button onclick="window.open('main.html')" style="padding: 10px 10px ;  margin-left: 10px;  box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Submit</button > <br><br>
+             
+
+  
+          </div> <br><br>
+         
+        
+
+       
+        </div>
+  
+  
+  
+      </center>
+
+
+
+
+    </div>
+
+
+
+<script>
+  function validation(){
+    var fnm = document.form.firstname.value;
+    var lnm = document.form.laststname.value;
+    var usr = document.form.username.value;
+    var psw = document.form.password.value;
+
+
+    if(usr=="astoria" && pswd=="astoria123"){
+
+                alert("username and password is correct");
+                
+            }
+            else{
+                alert("username and password is incorrect");
+            }
+
+    if(fnm=="Priya"&&lnm=="Dehariya"){
+
+      alert("firstname and lastname  is correct");
+                setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+            else{
+                alert("firstname and lastname  is incorrect");
+            }
+        
+    }
+
+
+
+  
+</script>
+
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='index.css' type='text/css' />
+
+<style>
+
+h1 {
+    margin-left: 70px;
+    }
+    form li {
+    list-style: none;
+    margin-bottom: 5px;
+    }
+    
+    form ul li label{
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    }
+    
+    form ul li input, select, span {
+    float: left;
+    margin-bottom: 10px;
+    
+    }
+    
+    form textarea {
+    float: left;
+    width: 350px;
+    height: 150px;
+    }
+    
+    [type="submit"] {
+    clear: left;
+    margin: 20px 0 0 230px;
+    font-size:18px
+    }
+    
+    p {
+    margin-left: 70px;
+    font-weight: bold;
+    }
+</style>
+
+</head>
+
+
+<body nload="document.registration.contact.focus();">
+
+
+    <div  class="navbar">
+        <a  class="Home" href="">Home</a>
+        <a class="Contact" href="">Contact</a>
+        <a class="About" href="">About</a>
+        
+     
+        
+    </div>
+
+    <center>
+<h1 style="margin-right: 10% ;" >Registration Form</h1><br><br>
+
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<!-- o"<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /><li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /><li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li></li></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li><li><label>Language:</label></li>-->
+
+<!--<li><label for="username"> Username:</label></li>
+<li><input style=" padding:7px 7px ; width:200px ; border-radius:15px;border: none;" type="text" name="username" size="50" /></li><br><br>
+
+<li><label for="passid">Password:</label></li>
+<li><input style=" padding:7px 7px ; width:200px ; border-radius:15px;border: none;" type="password" name="passid" size="12" /></li><br><br>
+
+
+
+
+
+<li><label for="email">Email:</label></li>
+
+<li><input style=" padding:7px 7px ; width:200px ; border-radius:15px;border: none;" type="text" name="email" size="50" /></li><br><br>
+
+
+<li><label for="contact">Contact:</label></li>
+<li><input style=" padding:7px 7px ; width:200px ; border-radius:15px;border: none;" type="text" name="userid" size="12" /><br><br>
+
+
+<li><label id="gender">Gender:</label></li>
+
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+
+
+
+<li><input onclick="document.location='main.html'" type="submit" name="submit" style="padding: 11px 11px;border-radius:15px;border: none;margin-left:40%;" value="Submit" /></li>
+</ul>
+</form>
+</center>
+
+
+<script>
+
+function formValidation()
+{
+var uid = document.registration.contact;
+var passid = document.registration.passid;
+var uname = document.registration.username;
+var uadd = document.registration.address;
+var ucountry = document.registration.country;
+var uzip = document.registration.zip;
+var uemail = document.registration.email;
+var umsex = document.registration.msex;
+var ufsex = document.registration.fsex; if(userid_validation(uid,1))
+{
+if(passid_validation(passid,7,12))
+{
+if(allLetter(uname))
+{
+if(alphanumeric(uadd))
+{ 
+if(countryselect(ucountry))
+{
+if(allnumeric(uzip))
+{
+if(ValidateEmail(uemail))
+{
+if(validsex(umsex,ufsex))
+{
+}
+} 
+}
+} 
+}
+}
+}
+}
+return false;
+}
+
+
+function userid_validation(uid,mx,my)
+{
+var uid_len = uid.value.length;
+if (uid_len == 0 || uid_len >= my || uid_len < mx)
+{
+alert("contact should not be empty / length be between "+mx+" to "+my);
+uid.focus();
+return false;
+}
+return true;
+}
+
+function allLetter(uname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+
+function alphanumeric(uadd)
+{ 
+var letters = /^[0-9a-zA-Z]+$/;
+if(uadd.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('User address must have alphanumeric characters only');
+uadd.focus();
+return false;
+}
+}
+
+function countryselect(ucountry)
+{
+if(ucountry.value == "Default")
+{
+alert('Select your country from the list');
+ucountry.focus();
+return false;
+}
+else
+{
+return true;
+}
+}
+
+function allnumeric(uzip)
+{ 
+var numbers = /^[0-9]+$/;
+if(uzip.value.match(numbers))
+{
+return true;
+}
+else
+{
+alert('ZIP code must have numeric characters only');
+uzip.focus();
+return false;
+}
+}
+
+function ValidateEmail(uemail)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(uemail.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+uemail.focus();
+return false;
+}
+}
+
+function validsex(umsex,ufsex)
+{
+x=0;
+
+if(umsex.checked) 
+{
+x++;
+} if(ufsex.checked)
+{
+x++; 
+}
+if(x==0)
+{
+alert('Select Male/Female');
+umsex.focus();
+return false;
+}
+else
+{
+alert('Form Successfully Submitted');
+setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+window.location="main.html"
+return true;}
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loin Page</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20161229/_username_login_1172579.png">
+    <link rel="stylesheet" href="index.css">
+    
+    
+
+
+
+ <script>  
+        function verifyPassword() {  
+            var usr = document.form.username.value;
+            var pswd = document.form.password.value;
+
+            if(usr=="Astoria" && pswd=="Astoria123"){
+                alert("login Successfully");
+                setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+            else{
+                alert("login Failed");
+            }
+
+          }  
+        
+        </script>  
+    
+</head>
+<body>
+
+    <div class="nav">
+        <a class="Home" href="">Home</a>
+        <a class="Contact" href="">Contact</a>
+        <a class="About" href="">About</a>
+        
+        
+    </div>
+  
+
+    
+
+  
+    <center>
+        
+     <h1> <b> Login Your Account </b></h1>
+
+      <form name="form" id="form" onsubmit ="verifyPassword()" >
+        
+    
+
+        <div class="container">
+
+
+            
+
+           <label   for="username"><b>Username :</b></label>
+            <input   id = "username"    name="username" type="text" placeholder="Enter Username" required > <br> <br>
+            
+
+
+            <label  for="password"><b>Password :</b></label>
+            <input  id = "password"  type="password" name="password" placeholder="Enter Password" required> <br> <br>
+           
+             
+          
+           <button value="submit" name="submit" onclick="document.location=('main.html')">Login</button><br><br>
+
+
+
+
+
+
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>  <span class="frgt"><a onclick="window.open('forget.html')" href="#"> Forget Your Password ? </a></span>
+
+
+        </div> <br>
+         
+        <div class="box">
+          
+            <span class="reg"><a  href="#"  onclick="window.open('registration.html')" > Not Have Account You Can Register Here... </a></span>  <br> <br>
+
+          <!--  <button  onclick="window.open('Welcome.html')" style="padding: 10px 10px ;   box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Click Here</button >-->
+
+      </form> 
+
+     
+      </div>
+
+
+
+    </center>
+
+
+   
+    
+ 
+    
+
+
+
+   
+
+
+
+</body>
+</html>

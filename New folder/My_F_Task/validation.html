@@ -1,0 +1,85 @@
+<!--<html>
+  
+<head>
+<center>
+<title> Password Validation</title>
+</head>
+<script>
+function validateForm() {
+
+    var pw1 = document.getElementById("pswd1").value;
+    var pw2 = document.getElementById("pswd2").value;
+    var name1 = document.getElementById("fname").value;
+    
+    if(name1 == "") {
+      document.getElementById("blankMsg").innerHTML = "**Fill the first name";
+      return false;
+    }
+    
+
+    if(!isNaN(name1)){
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+    } 
+  
+
+    if(pw1 == "") {
+      document.getElementById("message1").innerHTML = "**Fill the password please!";
+      return false;
+    }
+  
+    if(pw2 == "") {
+      document.getElementById("message2").innerHTML = "**Enter the password please!";
+      return false;
+    } 
+   
+
+    if(pw1.length < 8) {
+      document.getElementById("message1").innerHTML = "**length must be atleast 8 characters";
+      return false;
+    }
+
+    if(pw1.length > 15) {
+      document.getElementById("message1").innerHTML = "**length must not exceed 15 characters";
+      return false;
+    }
+  
+    if(pw1 != pw2) {
+      document.getElementById("message2").innerHTML = "**Passwords are not same! Retry with new Password";
+      return false;
+    } else {
+      alert ("password created successfully");
+      document.write("form has been submitted successfully");
+    }
+ }
+</script>
+
+<body>
+<h1 style="color:orange">validateForm</h1>
+<h3>  Please Fill the form  </h3>
+
+<form onsubmit ="return validateForm()">
+
+
+<td> Full Name* </td>
+<input type = "text" id = "fname" value = ""> 
+<span id = "blankMsg" style="color:orange"> </span> <br><br>
+
+
+<td> Create Password* </td>
+<input type = "password" id = "pswd1" value = ""> 
+<span id = "message1" style="color:orange"> </span> <br><br>
+
+<td> Confirm Password* </td>
+<input type = "password" id = "pswd2" value = ""> 
+<span id = "message2" style="color:orange"> </span> <br><br>
+
+<input type = "submit" value = "Submit">
+
+<button type = "reset" value = "Reset" >Reset</button>
+</form>
+</body>
+</center>
+</html>
+
+ 

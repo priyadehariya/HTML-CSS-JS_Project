@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<script>
+
+   function verifyPassword() {  
+            var usr = document.form.username.value;
+            var pswd = document.password.value;
+
+    if(usr=="astoria" &&pswd=="astoria123"){
+            alert("login Successfully");
+            setTimeout(function(){
+             window.location="main.html"
+                },5);
+            }
+            else{
+                alert("login Failed");
+            }
+
+          }  
+        
+
+    </script>
+</head>
+<body>
+    <form name="form" id="form" action="#" onsubmit ="verifyPassword()">
+      
+        <label   for="username"><b>Username :</b></label>
+        <input   id = "username"    name="username" type="text" placeholder="Enter Username" required > <br> <br>
+        
+
+
+        <label  for="password"><b>Password :</b></label>
+       
+       
+     <input  id = "password"  type="password" name="password" placeholder="Enter Password" required> <br> <br>
+        <button onclick="window.open('main.html')">Login</button>
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loin Page</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20161229/_username_login_1172579.png">
+    <link rel="stylesheet" href="index.css">
+    
+    
+
+
+
+ <script>  
+        function verifyPassword() {  
+            var usr = document.form.username.value;
+            var pswd = document.form.cpassword.value;
+            var cp = document.form.cnpassword.value;
+
+            if(usr == "" && pswd =="" &&cp== ""){
+                alert("Firstly Enter Your Details");
+                return false
+            }
+           
+           
+            if(usr== ""&&pswd == ""){
+                alert("Firstly Fill Your Username & Password");
+                return false
+            }
+
+            if(usr == ""&& pswd!==""){
+                alert("Enter Your Username");
+                return false
+            }
+
+            if(usr!== ""&& pswd == ""){
+                alert("Enter Your Password");
+                return false
+            }
+
+
+            if(usr!=="Astoria"){
+                alert("Your username is wrong");
+                return false
+            }
+           
+            if(cp!=pswd){
+                alert("Your Password Is Not Match Please Renter Your Password ");
+                return false
+            }
+
+            if(cp== ""){
+                alert("Create Your Pasword ");
+                return false
+            }
+            
+            if(cp.length > 8 ){
+                alert("Atleast Take 8 Character");
+                return false;
+            }
+
+
+            if(usr=="Astoria" && cp==pswd){
+                alert("New Password is created You Can Login");
+                setTimeout(function(){
+                    window.location="main.html"
+                },5);
+            }
+            else{
+                alert("Password is not create");
+            }
+
+          }  
+        
+        </script>  
+    
+</head>
+<body>
+
+    <div class="nav">
+      
+        <a class="Home" onclick="window.open('home.html')" href="">Home</a>
+        <a onclick="window.open('contact.html')" class="Contact" href="">Contact</a>
+        <a class="About" onclick="window.open('about.html')" href="">About</a>
+        <a  href="Logout" onclick="window.open('index.html')" >Logout</a>
+        
+    </div>
+  
+
+    
+
+  
+    <center>
+        
+     <h1> <b> Create New Password </b></h1>
+
+      <form name="form" id="form" onsubmit ="verifyPassword()" >
+        
+    
+
+        <div class="container">
+
+
+            
+
+           <label   for="username"><b>Username :</b></label>
+            <input style="margin-left:50px;"  id = "username"    name="username" type="text" placeholder="Enter Username"  > <br> <br>
+            
+
+
+            <label  for="password"><b>Create Password :</b></label>&nbsp;&nbsp;
+            <input  id = "cpassword"  type="password" name="cpassword" placeholder="Enter Password" > <br> <br>
+           
+            <label  for="password"><b>Confirm Password :</b></label>&nbsp;&nbsp;
+            <input  id = "cnpassword"  type="password" name="cnpassword" placeholder="Enter Password" ><br> <br>
+            
+            
+            
+          
+           <button value="submit" name="submit" id="submit">submit</button> &nbsp;&nbsp;
+           
+           <button  value="submit" type="reset" name="reset" id="submit">Reset</button>
+
+           <br><br>
+
+
+
+
+
+
+
+
+        </div> <br>
+         
+
+          
+           
+
+          <!--  <button  onclick="window.open('Welcome.html')" style="padding: 10px 10px ;   box-shadow: 1px 2px 3px 4px rgba(233, 229, 229, 0.943); border-radius:10px;border: none;" type="submit">Click Here</button >-->
+
+      </form> 
+
+     
+      </div>
+
+
+
+    </center>
+
+
+   
+    
+ 
+    
+
+
+
+   
+
+
+
+</body>
+</html>
